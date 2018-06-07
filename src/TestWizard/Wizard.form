@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.5" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JFileChooser" name="directoryChooser">
+    </Component>
+    <Container class="javax.swing.JDialog" name="slideCreationDialog">
+      <Properties>
+        <Property name="title" type="java.lang.String" value="Slide creation..."/>
+        <Property name="alwaysOnTop" type="boolean" value="true"/>
+        <Property name="bounds" type="java.awt.Rectangle" editor="org.netbeans.beaninfo.editors.RectangleEditor">
+          <Rectangle value="[100, 100, 200, 50]"/>
+        </Property>
+        <Property name="resizable" type="boolean" value="false"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="slideCreationPanel" alignment="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="slideCreationPanel" alignment="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="slideCreationPanel">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="slideCreation_progressBar" alignment="0" pref="246" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="slideCreation_progressBar" alignment="0" pref="50" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JProgressBar" name="slideCreation_progressBar">
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.ButtonGroup" name="intraArrayNormalisation_buttonGroup">
+    </Component>
+    <Component class="javax.swing.JFileChooser" name="fileChooser">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="interArrayNormalisation_buttonGroup">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="mergeReplicates_buttonGroup">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="COCAS wizard"/>
+    <Property name="bounds" type="java.awt.Rectangle" editor="org.netbeans.beaninfo.editors.RectangleEditor">
+      <Rectangle value="[50, 50, 500, 440]"/>
+    </Property>
+    <Property name="name" type="java.lang.String" value="wizard" noResource="true"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="wizardMainPanel" min="-2" max="-2" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="wizardMainPanel" min="-2" max="-2" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="wizardMainPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Component id="wizard_imageLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="wizardInnerPanel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+              <Component id="wizardMain_separator" alignment="1" pref="480" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="261" max="32767" attributes="0"/>
+                  <Component id="wizard_backButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="wizard_nextButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="wizard_cancelButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="wizardInnerPanel" max="32767" attributes="1"/>
+                      <Component id="wizard_imageLabel" alignment="1" min="-2" max="-2" attributes="1"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="wizardMain_separator" min="-2" pref="10" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="wizard_cancelButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="wizard_nextButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="wizard_backButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="wizard_cancelButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancel"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="wizard_cancelButtonMouseReleased"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="wizard_nextButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Next &gt;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="wizard_nextButtonMouseReleased"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="wizard_backButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt; Back"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="wizard_backButtonMouseReleased"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="wizardMain_separator">
+        </Component>
+        <Component class="javax.swing.JLabel" name="wizard_imageLabel">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/data/cluster.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jLabel6"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[100, 350]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[100, 350]"/>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[100, 350]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="wizardInnerPanel">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder/>
+              </Border>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[350, 350]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[350, 350]"/>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[350, 350]"/>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="namesPanel">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="namesPanel" noResource="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="card6"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="names_TitleLabel" alignment="1" pref="326" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="names_analysisNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="names_numberOfSlidesLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="names_analysisNameTextField" alignment="0" min="-2" pref="123" max="-2" attributes="1"/>
+                                      <Component id="names_numberOfSlidesSpinner" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="names_loadButton" alignment="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="names_TitleLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="names_analysisNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="names_analysisNameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="names_numberOfSlidesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="names_numberOfSlidesSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="193" max="32767" attributes="0"/>
+                          <Component id="names_loadButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="names_TitleLabel">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="18" style="0"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="New COCAS pipeline analysis"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="names_analysisNameLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Analysis name"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The way you want to name the analysis of your experiment."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="names_numberOfSlidesLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Number of slides"/>
+                    <Property name="toolTipText" type="java.lang.String" value="An experiment is considered to be a slide plus its potential replicates"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="names_analysisNameTextField">
+                  <Properties>
+                    <Property name="toolTipText" type="java.lang.String" value="The way you want to name the analysis of your experiment."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSpinner" name="names_numberOfSlidesSpinner">
+                  <Properties>
+                    <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+                      <SpinnerModel initial="1" minimum="1" numberType="java.lang.Integer" stepSize="1" type="number"/>
+                    </Property>
+                    <Property name="toolTipText" type="java.lang.String" value="An experiment is considered to be a slide plus his potential replicates"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="names_loadButton">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="10" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Load parameters"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="names_loadButtonMouseReleased"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="intraArrayNormalisationPanel">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="card5"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="intraArrayNormalisation_lowessRadioButton" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="287" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="intraArrayNormalisation_vsnRadioButton" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="191" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="intraArrayNormalisation_pengRadioButton" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="271" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="intraArrayNormalisation_titleLabel" alignment="1" pref="348" max="32767" attributes="0"/>
+                              <Component id="intraArrayNormalisation_separator" alignment="0" pref="348" max="32767" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="intraArrayNormalisation_medianRadioButton" min="-2" max="-2" attributes="0"/>
+                                      <Component id="bgCorrectionMethodLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace pref="79" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="bgCorrectionMethodComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="interArrayNormalisation_mergeReplicatesCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="intraArrayNormalisation_titleLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="intraArrayNormalisation_medianRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="interArrayNormalisation_mergeReplicatesCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="intraArrayNormalisation_lowessRadioButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="intraArrayNormalisation_vsnRadioButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="intraArrayNormalisation_pengRadioButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="bgCorrectionMethodComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="bgCorrectionMethodLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="intraArrayNormalisation_separator" min="-2" pref="10" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" min="-2" pref="143" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="intraArrayNormalisation_titleLabel">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="18" style="0"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="Intra-array normalisation"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="interArrayNormalisation_mergeReplicatesCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Multiple Slide Design"/>
+                    <Property name="toolTipText" type="java.lang.String" value="Check this box if your design comprises more than one slide"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="interArrayNormalisation_mergeReplicatesCheckBoxMouseReleased"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="intraArrayNormalisation_medianRadioButton">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="intraArrayNormalisation_buttonGroup"/>
+                    </Property>
+                    <Property name="selected" type="boolean" value="true"/>
+                    <Property name="text" type="java.lang.String" value="Median"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="intraArrayNormalisation_medianRadioButtonMouseReleased"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="intraArrayNormalisation_lowessRadioButton">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="intraArrayNormalisation_buttonGroup"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Lowess"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="intraArrayNormalisation_lowessRadioButtonMouseReleased"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="intraArrayNormalisation_vsnRadioButton">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="intraArrayNormalisation_buttonGroup"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Variance Stabilisation (VSN)"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="intraArrayNormalisation_vsnRadioButtonMouseReleased"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="intraArrayNormalisation_pengRadioButton">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="intraArrayNormalisation_buttonGroup"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Peng et al."/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="intraArrayNormalisation_pengRadioButtonMouseReleased"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="intraArrayNormalisation_separator">
+                </Component>
+                <Component class="javax.swing.JLabel" name="bgCorrectionMethodLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Background Correction Method"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="bgCorrectionMethodComboBox">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="8">
+                        <StringItem index="0" value="None"/>
+                        <StringItem index="1" value="Subtract"/>
+                        <StringItem index="2" value="Half"/>
+                        <StringItem index="3" value="Minimum"/>
+                        <StringItem index="4" value="Moving Minimum"/>
+                        <StringItem index="5" value="Edwards"/>
+                        <StringItem index="6" value="NormExp"/>
+                        <StringItem index="7" value="RMA"/>
+                      </StringArray>
+                    </Property>
+                    <Property name="toolTipText" type="java.lang.String" value="Recommended default setting : Subtract"/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JEditorPane" name="intraArrayNormalisation_explainEditorPane">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="d8" green="e9" id="Control" palette="2" red="ec" type="palette"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
+                        </Property>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="interArrayNormalisationPanel">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="card7"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jScrollPane1" alignment="0" pref="326" max="32767" attributes="0"/>
+                              <Component id="interArrayNormalisation_separator" alignment="1" pref="326" max="32767" attributes="0"/>
+                              <Component id="interArrayNormalisation_titleLabel" alignment="0" pref="326" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="interArrayNormalisation_normalisationLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="interArrayNormalisation_noneRadioButton" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="interArrayNormalisation_medianRadioButton" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="interArrayNormalisation_quantileRadioButton" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="interArrayNormalisation_normalisationLabel1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="interArrayNormalisation_meanRadioButton" min="-2" max="-2" attributes="0"/>
+                                      <Component id="interArrayNormalisation_agilentRadioButton" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="interArrayNormalisation_titleLabel" min="-2" pref="22" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="interArrayNormalisation_normalisationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="interArrayNormalisation_normalisationLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="interArrayNormalisation_noneRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="interArrayNormalisation_meanRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="interArrayNormalisation_medianRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="interArrayNormalisation_agilentRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="interArrayNormalisation_quantileRadioButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="interArrayNormalisation_separator" min="-2" pref="10" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" pref="160" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="interArrayNormalisation_titleLabel">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="18" style="0"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="Inter-array normalisation"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="interArrayNormalisation_normalisationLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Normalisation type"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="interArrayNormalisation_noneRadioButton">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="interArrayNormalisation_buttonGroup"/>
+                    </Property>
+                    <Property name="selected" type="boolean" value="true"/>
+                    <Property name="text" type="java.lang.String" value="None"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="interArrayNormalisation_medianRadioButton">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="interArrayNormalisation_buttonGroup"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Median"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="interArrayNormalisation_medianRadioButtonMouseReleased"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="interArrayNormalisation_quantileRadioButton">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="interArrayNormalisation_buttonGroup"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Quantile"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="interArrayNormalisation_meanRadioButton">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="mergeReplicates_buttonGroup"/>
+                    </Property>
+                    <Property name="selected" type="boolean" value="true"/>
+                    <Property name="text" type="java.lang.String" value="Mean"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="interArrayNormalisation_agilentRadioButton">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="mergeReplicates_buttonGroup"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Roberts et al."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="interArrayNormalisation_separator">
+                </Component>
+                <Component class="javax.swing.JLabel" name="interArrayNormalisation_normalisationLabel1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Replicate merge method"/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JEditorPane" name="interArrayNormalisation_explainEditorPane">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="d8" green="e9" id="Control" palette="2" red="ec" type="palette"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
+                        </Property>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="peakPanel">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="peakPanel" noResource="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="card4"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="21" pref="21" max="21" attributes="0"/>
+                                  <Component id="jLabel1" min="-2" pref="72" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="peak_bindingCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="peak_pValueCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="203" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="peak_titleLabel" pref="326" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="peak_distanceLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="21" pref="21" max="21" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="peak_pValueExtendLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="peak_pValuePeakLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="21" pref="21" max="21" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="peak_bindingExtendLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="peak_bindingPeakLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <Component id="jCheckBox1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel2" alignment="1" min="-2" pref="82" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="12" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="peak_pValueExtendTextField" alignment="0" max="32767" attributes="1"/>
+                                          <Component id="peak_pValuePeakTextField" alignment="0" max="32767" attributes="1"/>
+                                          <Component id="peak_distanceTextField" alignment="0" pref="40" max="32767" attributes="1"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Component id="peak_bindingExtendMeanTextField" alignment="0" max="32767" attributes="1"/>
+                                                  <Component id="peak_bindingPeakMeanTextField" alignment="0" pref="27" max="32767" attributes="1"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="peak_bindingExtendMeanLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="peak_bindingPeakMeanLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                              <Component id="jSpinner1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jTextField1" alignment="1" min="-2" pref="31" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="peak_bindingExtendStddevTextField" alignment="0" max="32767" attributes="1"/>
+                                          <Component id="peak_bindingPeakStddevTextField" alignment="0" pref="27" max="32767" attributes="1"/>
+                                      </Group>
+                                      <EmptySpace pref="12" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="peak_bindingPeakStddevLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="peak_bindingExtendStddevLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="peak_titleLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="peak_distanceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="peak_distanceTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="peak_bindingCheckBox" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="peak_bindingPeakLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="peak_bindingPeakMeanTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="peak_bindingPeakMeanLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="peak_bindingPeakStddevTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="peak_bindingPeakStddevLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="peak_bindingExtendLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="peak_bindingExtendMeanTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="peak_bindingExtendMeanLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="peak_bindingExtendStddevTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="peak_bindingExtendStddevLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="peak_pValueCheckBox" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="peak_pValuePeakLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="peak_pValuePeakTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="peak_pValueExtendLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="peak_pValueExtendTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jSpinner1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="35" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="peak_titleLabel">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="18" style="0"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="Peak detection"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="peak_distanceLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Distance threshold"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The distance beyond which two probes are not considered as neighbours."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="peak_bindingPeakLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Peak threshold"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of binding ratio beyond which a probe will be considered as a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_bindingCheckBox" sourcePath="${selected}" target="peak_bindingPeakLabel" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="peak_bindingPeakMeanLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="x Mean +"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of binding ratio beyond which a probe will be considered as a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_bindingCheckBox" sourcePath="${selected}" target="peak_bindingPeakMeanLabel" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="peak_bindingPeakStddevLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="x Std deviation"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of binding ratio beyond which a probe will be considered as a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_bindingCheckBox" sourcePath="${selected}" target="peak_bindingPeakStddevLabel" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="peak_bindingExtendLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Extend threshold"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of binding ratio beyond which a probe will be considered as a valid neighbour of a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_bindingCheckBox" sourcePath="${selected}" target="peak_bindingExtendLabel" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="peak_bindingExtendMeanLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="x Mean +"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of binding ratio beyond which a probe will be considered as a valid neighbour of a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_bindingCheckBox" sourcePath="${selected}" target="peak_bindingExtendMeanLabel" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="peak_bindingExtendStddevLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="x Std deviation"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of binding ratio beyond which a probe will be considered as a valid neighbour of a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_bindingCheckBox" sourcePath="${selected}" target="peak_bindingExtendStddevLabel" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="peak_pValuePeakLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Peak threshold"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of p-value beyond which a probe will be considered as a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_pValueCheckBox" sourcePath="${selected}" target="peak_pValuePeakLabel" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="peak_pValueExtendLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Extend threshold"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of p-value beyond which a probe will be considered as a valid neighbour of a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_pValueCheckBox" sourcePath="${selected}" target="peak_pValueExtendLabel" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="peak_distanceTextField">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="650"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The distance beyond which two probes are not considered as neighbours."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="peak_pValueExtendTextField">
+                  <Properties>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of p-value beyond which a probe will be considered as a valid neighbour of a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_pValueCheckBox" sourcePath="${selected}" target="peak_pValueExtendTextField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="peak_pValuePeakTextField">
+                  <Properties>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of p-value beyond which a probe will be considered as a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_pValueCheckBox" sourcePath="${selected}" target="peak_pValuePeakTextField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="peak_bindingExtendMeanTextField">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                    <Property name="text" type="java.lang.String" value="1"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of binding ratio beyond which a probe will be considered as a valid neighbour of a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_bindingCheckBox" sourcePath="${selected}" target="peak_bindingExtendMeanTextField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="peak_bindingPeakMeanTextField">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                    <Property name="text" type="java.lang.String" value="1"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of binding ratio beyond which a probe will be considered as a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_bindingCheckBox" sourcePath="${selected}" target="peak_bindingPeakMeanTextField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="peak_bindingPeakStddevTextField">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                    <Property name="text" type="java.lang.String" value="2"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of binding ratio beyond which a probe will be considered as a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_bindingCheckBox" sourcePath="${selected}" target="peak_bindingPeakStddevTextField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="peak_bindingExtendStddevTextField">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                    <Property name="text" type="java.lang.String" value="1"/>
+                    <Property name="toolTipText" type="java.lang.String" value="The threshold of binding ratio beyond which a probe will be considered as a valid neighbour of a peak probe."/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="peak_bindingCheckBox" sourcePath="${selected}" target="peak_bindingExtendStddevTextField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="peak_bindingCheckBox">
+                  <Properties>
+                    <Property name="selected" type="boolean" value="true"/>
+                    <Property name="text" type="java.lang.String" value="Binding ratio threshold"/>
+                    <Property name="toolTipText" type="java.lang.String" value="Activate the binding ratio thresholds for the peak detection."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="peak_pValueCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="p-Value threshold"/>
+                    <Property name="toolTipText" type="java.lang.String" value="Activate the p-value thresholds for the peak detection."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ringo threshold"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Percentile"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="jTextField1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="0.99"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSpinner" name="jSpinner1">
+                  <Properties>
+                    <Property name="value" type="java.lang.Object" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="1" type="code"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Window"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="outputPanel">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="card3"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="output_outputDirectoryLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="output_outputDirectoryTextField" min="-2" pref="176" max="-2" attributes="1"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="output_browseButton" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="output_gffCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="output_formatLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="output_sgrCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="output_bedCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="output_titleLabel" pref="333" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="output_titleLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="output_outputDirectoryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="output_browseButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="output_outputDirectoryTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="output_formatLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="output_gffCheckBox" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="output_sgrCheckBox" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="output_bedCheckBox" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="169" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="output_titleLabel">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="18" style="0"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="Output"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="output_formatLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Output files format"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="output_gffCheckBox">
+                  <Properties>
+                    <Property name="selected" type="boolean" value="true"/>
+                    <Property name="text" type="java.lang.String" value="GFF"/>
+                    <Property name="toolTipText" type="java.lang.String" value="Format used :&#xa;&lt;Chromosom&gt;   &lt;Source&gt;   &lt;Feature&gt;   &lt;Start&gt;   &lt;End&gt;   &lt;Score&gt;   &lt;Strand&gt;   &lt;Frame&gt;   [Attributes]   [Comments]"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="output_sgrCheckBox">
+                  <Properties>
+                    <Property name="selected" type="boolean" value="true"/>
+                    <Property name="text" type="java.lang.String" value="SGR"/>
+                    <Property name="toolTipText" type="java.lang.String" value="SGR format description"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="output_bedCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="BED"/>
+                    <Property name="toolTipText" type="java.lang.String" value="BED format description"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="output_outputDirectoryLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Output directory"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="output_outputDirectoryTextField">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="c:/COCAS"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="output_browseButton">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Browse"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="output_browseButtonMouseReleased"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="summaryPanel">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="summaryPanel" noResource="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="card2"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="summary_experimentNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="summary_numberOfSlidesLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="summary_outputDirectoryLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="summary_numberOfSlidesTextField" alignment="0" min="-2" pref="26" max="-2" attributes="1"/>
+                                      <Component id="summary_outputDirectoryTextField" alignment="0" pref="239" max="32767" attributes="1"/>
+                                      <Component id="summary_experimentTextField" alignment="0" min="-2" pref="115" max="-2" attributes="1"/>
+                                  </Group>
+                              </Group>
+                              <Component id="summary_title" alignment="1" pref="326" max="32767" attributes="0"/>
+                              <Component id="summary_saveButton" alignment="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="summary_title" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="summary_experimentNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="summary_experimentTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="summary_outputDirectoryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="summary_outputDirectoryTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="summary_numberOfSlidesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="summary_numberOfSlidesTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="191" max="32767" attributes="0"/>
+                          <Component id="summary_saveButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="summary_title">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="18" style="0"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="Summary"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="summary_experimentNameLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Experiment name"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="summary_outputDirectoryLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Output directory"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="summary_numberOfSlidesLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Number of slides"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="summary_experimentTextField">
+                  <BindingProperties>
+                    <BindingProperty name="text" source="names_analysisNameTextField" sourcePath="${text}" target="summary_experimentTextField" targetPath="text" updateStrategy="0" immediately="false">
+                      <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+                    </BindingProperty>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="summary_outputDirectoryTextField">
+                  <BindingProperties>
+                    <BindingProperty name="text" source="output_outputDirectoryTextField" sourcePath="${text}" target="summary_outputDirectoryTextField" targetPath="text" updateStrategy="0" immediately="false">
+                      <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+                    </BindingProperty>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="summary_numberOfSlidesTextField">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="horizontalAlignment" type="int" value="11"/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="text" source="names_numberOfSlidesSpinner" sourcePath="${value}" target="summary_numberOfSlidesTextField" targetPath="text" updateStrategy="0" immediately="false">
+                      <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+                    </BindingProperty>
+                  </BindingProperties>
+                </Component>
+                <Component class="javax.swing.JButton" name="summary_saveButton">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="10" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Save parameters"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="summary_saveButtonMouseReleased"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

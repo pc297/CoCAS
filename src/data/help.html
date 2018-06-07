@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta name="GENERATOR" content="PageBreeze HTML Editor">
+<title></title>
+</head>
+<body bgcolor="#ffffff">
+<p><strong>Cocas</strong> - <strong>C</strong><em>hIP</em> 
+<strong>O</strong><em>n</em> <strong>C</strong><em>hip</em> 
+<strong>A</strong><em>nalysis</em> <strong>S</strong><em>uite</em> Online 
+Help</p>
+<ol>
+  <li>
+<div><a href="#1"> Introduction</a> </div>
+  <li>
+<div><a href="#2">Requirements</a> </div>
+  <li>
+<div><a href="#3">Getting started</a>  </div>
+  <li>
+<div><a href="#4">Using CoCAS</a>  </div></li></ol>
+<ol>
+  <ol>
+  <li>
+<div><a href="#41">Guided Wizard</a>  </div>
+  <li>
+<div><a href="#42">Loading files</a>  </div>
+  <li>
+<div><a href="#43">Dye swap</a>  </div>
+  <li>
+<div><a href="#44">Intra-array normalization 
+    parameters</a>   </div>
+  <li>
+<div><a href="#45">Multiple Slide designs</a>   </div>
+  <li>
+<div><a href="#46">Inter-array normalization 
+    parameters</a>   </div>
+  <li>
+<div><a href="#47">Replicate merge 
+    method</a>   </div>
+  
+</ol></ol>
+<p>&nbsp;&nbsp;&nbsp; 5.&nbsp;&nbsp;&nbsp;<a 
+href="#5"  name="5">Changes from previous versions</a></p>
+<p>&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;&nbsp;<a 
+href="#1" name="1">Introduction</a></p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p>CoCAS is a standalone Chromatin immunoprecipitation 
+  microarray (ChIP-on-chip) analysis application. It has been designed to be 
+  used primarily on Agilent microarrays, be they scanned 
+  using&nbsp;an&nbsp;Agilent scanner or with a GenePix scanner. CoCAS is free software and builds upon 
+  existing packages in Java and R programming languages, notably BioConductor. 
+  CoCAS uses Java for user graphical interface, and 
+  R for the bulk of the calculations.</p></blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;&nbsp; <a 
+href="#2" name="2">Requirements</a></p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p>CoCAS requires at least 1 Gb RAM and a 
+  2GHz Intel Pentium 4 or equivalent for comfortable use. We recommend at least 
+  1 Gb of free hard disk space for swapping. CoCAS runs under any 32-bit or 
+  64-bit version of Microsoft Windows. NOTE THAT CoCAS REQUIRES R VERSION 
+  2.5.x/2.6.x TO BE INSTALLED ON YOUR SYSTEM (THERE ARE COMPATIBILITY ISSUES 
+  WITH R 2.7.x, WE ARE CURRENTLY WORKING ON THEM) AS WELL AS JAVA 1.5. JAVA 1.6 
+  IS RECOMMENDED.</p></blockquote>
+<p dir="ltr">&nbsp;&nbsp;&nbsp; 3.&nbsp; <a 
+href="#3" name="3">Getting started</a></p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p dir="ltr">CoCAS can be readily started by double 
+  clicking on the CoCAS_2.4.jar icon. Alternatively, CoCAS may be run from the 
+  command line with specific parameters, for example, in order to assign more 
+  memory to CoCAS, one would type <em>java -Xmx2048m -jar [path to 
+  CoCAS]/CoCAS_2.4.jar </em>. A welcome screen will prompt you to use the 
+  express wizard, which is an easy step by step guide.</p>
+<p dir="ltr"><img height="122" hspace="0" src="wizard.jpg" 
+  width=274 border=0></p>
+<p dir="ltr">Upon first use, you should click "No"&nbsp;so 
+  that&nbsp;you&nbsp;can check that you have all the required libraries. You can 
+  do this by clicking on the "Libraries" menu item from the "Update" menu.</p>
+<p dir="ltr"><img height="165" hspace="0" src="update.jpg" 
+  width=183 border=0></p>
+<p dir="ltr">CoCAS will then check and download libraries 
+  where appropriate. This process can be quite lengthy.</p>
+<p dir="ltr">&nbsp;</p></blockquote>
+<p dir="ltr">&nbsp;&nbsp;&nbsp; 4.&nbsp; <a 
+href="#4" name="4">Using CoCAS</a></p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p dir="ltr">1. <a href="#41" name="41">Guided Wizard</a></p>
+  <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p dir="ltr">CoCAS features a simple wizard that can help 
+    you design your analysis. There are eight steps which provide detailed help. 
+    The first step is to define an analysis name. Then comes file loading which 
+    is explained in the next section.</p></blockquote>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">2.&nbsp; <a href="#42" name="42">Loading 
+  Files</a></p>
+  <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p dir="ltr">Files can be loaded three ways in CoCAS. One 
+    way is to use the step-by-step guided wizard, or from the main window, 
+    either by right clicking on the File Panel, or by using the File Menu. In 
+    the classic mode, once you have loaded files, the main panel, which was 
+    greyed out, becomes accessible. CoCAS allows you to enter all replicas of a 
+    same experiment under one <em>slide</em>. For example, if you have two 
+    replicas of one experiment, 252040810001 and 252040810002, you will enter 
+    them under slide 1 for example</p></blockquote>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">3.&nbsp; <a href="#43" name="43">Dye Swap</a></p>
+<p dir="ltr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <span lang="EN-GB" 
+  style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Dye-swap 
+  normally sets&nbsp;Cy3 to the IP channel and Cy5 to the Input 
+  channel.</span></p>
+
+
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">4.&nbsp; <a href="#44" name="44">Intra-array normalization 
+    parameters</a></p>
+  <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p dir="ltr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <span lang="EN-GB" 
+  style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">You can here choose from four normalization methods :</span></p>
+  <ul dir="ltr">
+    <li>
+<div >Median</div></li>
+    <li>
+<div >Lowess</div></li>
+    <li>
+<div >Variance Stablilization (VSN)</div></li>
+    <li>
+<div >Peng <em>et al.</em></div></li></ul>
+  <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p >&nbsp;<strong>Median normalization</strong> 
+    assumes that the red and green intensities are related by a constant factor, 
+    i.e. R = kG, and the center of the distribution of log ratios is shifted to 
+    zero<br><br>&nbsp;log2R/G -&gt; log2R/G – c = log2R/(kG)<br>&nbsp;<br>where 
+    c = log2k is the median.</p>
+<p >See <a 
+    href="http://www.ncbi.nlm.nih.gov/pubmed/11473024">Zien A, Aigner T, Zimmer 
+    R, Lengauer T. Centralization: a new method for the normalization of gene 
+    expression data. Bioinformatics. 2001;17 Suppl 1:S323-31.</a> for details</p></blockquote>
+<p dir="ltr">&nbsp;&nbsp;&nbsp;</p>
+  <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p dir="ltr"><strong>Lowess</strong> (Locally weighted 
+    scatter plot smoothing) intensity-dependent normalization performs a fit of 
+    the data by subtracting a linear regression curve.<br><br>log2R/G -&gt; 
+    log2R/G – c(A) = log2R/[k(A)G]<br><br>where c(A) is the lowess fit to the 
+    MA-plot.</p>
+<p dir="ltr">See <a 
+    href="http://www.ncbi.nlm.nih.gov/pubmed/11473024">Yang YH, Dudoit S, Luu P, 
+    Lin DM, Peng V, Ngai J, Speed TP. Normalization for cDNA microarray data: a 
+    robust composite method addressing single and multiple slide systematic 
+    variation. Nucleic Acids Res. 2002 Feb 15;30(4):e15.</a> for details</p>
+<p dir="ltr">The <strong>Variance Stabilisation 
+    Normalisation</strong> (V.S.N.) method builds upon the fact that the 
+    variance of microarray data depends on the signal intensity and that a 
+    transformation can be found&nbsp;&nbsp;after which the variance is 
+    approximately constant. See <a 
+    href="http://www.ncbi.nlm.nih.gov/pubmed/12169536">Huber W, von Heydebreck 
+    A, Sültmann H, Poustka A, Vingron M. Variance stabilization applied to 
+    microarray data calibration and to the quantification of differential 
+    expression. Bioinformatics. 2002;18 Suppl 1:S96-104.</a> for details</p></blockquote>
+<p dir="ltr">&nbsp;</p>
+  <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p dir="ltr"><strong>Peng <em>et al. 
+    </em></strong>normalization uses signal enrichment rotation against 
+    intensity according to an angle estimated by PCA, then applies a weighted 
+    loess normalization. See <a 
+    href="http://www.ncbi.nlm.nih.gov/pubmed/17592629">Peng S, Alekseyenko AA, 
+    Larschan E, Kuroda MI, Park PJ. Normalization and experimental design for 
+    ChIP-chip data. BMC Bioinformatics. 2007 Jun 25;8:219.</a> for details</p></blockquote></blockquote>
+<p dir="ltr">&nbsp;</p>
+
+<p dir="ltr">5.&nbsp; <a href="#45" name="45">Multiple Slide 
+    Designs</a></p>
+  <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p dir="ltr">High density microarray designs can 
+    sometimes be spread over more than one slide, i.e. in the case of whole 
+    genome experiments.</p>
+<p dir="ltr">This option causes all slides entered as one 
+    experiment to be treated as replicates of part of a multi-slide 
+    design.<br><br>Example:<br><br>251471611301 : chr1-10 Replicate 1 as slide 
+    1<br>251471611302 : chr1-10 Replicate 2 as slide 1<br>251471711301 : chr11-Y 
+    Replicate 1 as slide 2<br>251471711302 : chr10-Y Replicate 2 as slide 2</p></blockquote>
+<p dir="ltr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <span lang="EN-GB" 
+  style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Multiple 
+  slide designs are handled as separate experiments until inter array 
+  normalization, after which they are merged as whole experiment.</span></p>
+
+
+
+
+
+
+<p dir="ltr">6.&nbsp; <a href="#46" name="46">Inter-array normalization 
+    parameters</a></p>
+  <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p dir="ltr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <span lang="EN-GB" 
+  style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">You can here choose from three normalization methods :</span></p>
+  <ul dir="ltr">
+    <li>
+<div >None</div></li>
+    <li>
+<div >Median</div></li>
+    <li>
+<div >Quantile</div></li>
+    <li>
+<div >Peng <em>et al.</em></div></li></ul>
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p dir="ltr"><strong>Quantile</strong> normalization is based upon the concept of a quantile-quantile plot extended to n dimensions. No special allowances are made for outliers. See <a href="http://www.ncbi.nlm.nih.gov/pubmed/12538238">Bolstad, B. M., R. A. Irizarry, M. Astrand, and T. P. Speed. 2003. A comparison of normalization methods for high density oligonucleotide array data based on variance and bias. Bioinformatics. 19(2):185-193.</a> for more details</p>
+
+	
+<p dir="ltr"><strong>Global median normalization</strong> achieves the same median signal intensities for each array. See <a href="http://www.ncbi.nlm.nih.gov/pubmed/12538238">Bolstad, B. M., R. A. Irizarry, M. Astrand, and T. P. Speed. 2003. A comparison of normalization methods for high density oligonucleotide array data based on variance and bias. Bioinformatics. 19(2):185-193.</a> for more details</p></blockquote></blockquote>
+
+
+<p dir="ltr">&nbsp;</p>
+
+<p dir="ltr">7.&nbsp; <a href="#47" name="47">Replicate Merging Method</a></p>
+  <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p dir="ltr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <span lang="EN-GB" 
+  style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">You can here choose two methods :</span></p>
+  <ul dir="ltr">
+    <li>
+<div >Mean</div></li>
+    <li>
+<div >Roberts <i>et al.</i></div></li>
+    </ul>
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+<p dir="ltr"><strong>Mean</strong> merging method simply calculates the mean of intensities for each probe on all arrays</p>
+
+	
+<p dir="ltr"><strong>Roberts <i>et al.</strong> uses the Rosetta error model <a href="http://www.ncbi.nlm.nih.gov/pubmed/12538238">Weng, L., H. Dai, Y. Zhan, Y. He, S. B. Stepaniants, and D. E. Bassett. 2006. Rosetta error model for gene expression analysis. Bioinformatics. 22(9):1111-1121.</a> for more details</p></blockquote>
+
+
+
+
+
+
+
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p></blockquote>
+</body>
+</html>
